@@ -17,6 +17,7 @@
 		1F7031C1261B558A0011C0EF /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031C0261B558A0011C0EF /* EventListCoordinator.swift */; };
 		1F7031C4261B565C0011C0EF /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031C3261B565C0011C0EF /* EventListViewController.swift */; };
 		1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031C6261B5AA70011C0EF /* UIColor+Extensions.swift */; };
+		1F7031CF261B5D940011C0EF /* EventsCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1F7031C0261B558A0011C0EF /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		1F7031C3261B565C0011C0EF /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		1F7031C6261B5AA70011C0EF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1F7031CE261B5D940011C0EF /* EventsCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsCountdown.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1F7031B1261B51000011C0EF /* Assets.xcassets */,
 				1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */,
 				1F7031B6261B51000011C0EF /* Info.plist */,
+				1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */,
 			);
 			path = EventsCountdown;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				1F7031BE261B51790011C0EF /* AppCoordinator.swift in Sources */,
 				1F7031C4261B565C0011C0EF /* EventListViewController.swift in Sources */,
+				1F7031CF261B5D940011C0EF /* EventsCountdown.xcdatamodeld in Sources */,
 				1F7031AD261B50FF0011C0EF /* ViewController.swift in Sources */,
 				1F7031A9261B50FF0011C0EF /* AppDelegate.swift in Sources */,
 				1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */,
@@ -381,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F7031CE261B5D940011C0EF /* EventsCountdown.xcdatamodel */,
+			);
+			currentVersion = 1F7031CE261B5D940011C0EF /* EventsCountdown.xcdatamodel */;
+			path = EventsCountdown.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F70319D261B50FF0011C0EF /* Project object */;
 }
