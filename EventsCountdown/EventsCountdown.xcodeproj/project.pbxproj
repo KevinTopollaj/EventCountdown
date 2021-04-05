@@ -66,13 +66,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1F348A18261B6DAB00500DBB /* ViewModel */ = {
+		1F348A18261B6DAB00500DBB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				1F348A14261B6C7700500DBB /* EventListViewModel.swift */,
 				1F348A2C261B7A8C00500DBB /* AddEventViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		1F70319C261B50FF0011C0EF = {
@@ -104,7 +104,7 @@
 				1F7031CA261B5C160011C0EF /* Controllers */,
 				1F7031CB261B5C330011C0EF /* Coordinators */,
 				1F348A17261B6D8F00500DBB /* Model */,
-				1F348A18261B6DAB00500DBB /* ViewModel */,
+				1F348A18261B6DAB00500DBB /* ViewModels */,
 			);
 			path = EventsCountdown;
 			sourceTree = "<group>";

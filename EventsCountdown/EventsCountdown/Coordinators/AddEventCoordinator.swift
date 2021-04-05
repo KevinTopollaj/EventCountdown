@@ -11,6 +11,8 @@ final class AddEventCoordinator: Coordinator {
   private(set) var childCoordinators: [Coordinator] = []
   private let navigationController: UINavigationController
   
+  var parentCoordinator: EventListCoordinator?
+  
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
   }
@@ -24,6 +26,6 @@ final class AddEventCoordinator: Coordinator {
   }
   
   func didFinishAddEvent() {
-    
+    parentCoordinator?.childDidFinish(self)
   }
 }

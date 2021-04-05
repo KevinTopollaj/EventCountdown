@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol Coordinator {
+protocol Coordinator: class {
   // keeps track of coordinators and makes sure we dont dealocate them imediately
   var childCoordinators: [Coordinator] { get }
   // entry point for each coordinator

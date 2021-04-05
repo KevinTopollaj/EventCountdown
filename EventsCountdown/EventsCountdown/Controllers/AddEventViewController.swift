@@ -16,4 +16,9 @@ class AddEventViewController: UIViewController {
     
   }
   
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    viewModel.viewDidDisappear()
+  }
+  
 }
