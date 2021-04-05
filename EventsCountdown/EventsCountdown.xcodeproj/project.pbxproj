@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F348A15261B6C7700500DBB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F348A14261B6C7700500DBB /* EventListViewModel.swift */; };
 		1F7031A9261B50FF0011C0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031A8261B50FF0011C0EF /* AppDelegate.swift */; };
 		1F7031AB261B50FF0011C0EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031AA261B50FF0011C0EF /* SceneDelegate.swift */; };
-		1F7031AD261B50FF0011C0EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031AC261B50FF0011C0EF /* ViewController.swift */; };
 		1F7031B0261B50FF0011C0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7031AE261B50FF0011C0EF /* Main.storyboard */; };
 		1F7031B2261B51000011C0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7031B1261B51000011C0EF /* Assets.xcassets */; };
 		1F7031B5261B51000011C0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */; };
@@ -22,10 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F348A14261B6C7700500DBB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		1F7031A5261B50FF0011C0EF /* EventsCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7031A8261B50FF0011C0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F7031AA261B50FF0011C0EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F7031AC261B50FF0011C0EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F7031AF261B50FF0011C0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F7031B1261B51000011C0EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7031B4261B51000011C0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F348A17261B6D8F00500DBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */,
+				1F7031D2261B5F040011C0EF /* CoreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F348A18261B6DAB00500DBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F348A14261B6C7700500DBB /* EventListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1F70319C261B50FF0011C0EF = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +88,14 @@
 				1F7031C9261B5BFD0011C0EF /* Extensions */,
 				1F7031CA261B5C160011C0EF /* Controllers */,
 				1F7031CB261B5C330011C0EF /* Coordinators */,
+				1F348A17261B6D8F00500DBB /* Model */,
+				1F348A18261B6DAB00500DBB /* ViewModel */,
 				1F7031A8261B50FF0011C0EF /* AppDelegate.swift */,
 				1F7031AA261B50FF0011C0EF /* SceneDelegate.swift */,
-				1F7031AC261B50FF0011C0EF /* ViewController.swift */,
 				1F7031AE261B50FF0011C0EF /* Main.storyboard */,
 				1F7031B1261B51000011C0EF /* Assets.xcassets */,
 				1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */,
 				1F7031B6261B51000011C0EF /* Info.plist */,
-				1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */,
-				1F7031D2261B5F040011C0EF /* CoreDataManager.swift */,
 			);
 			path = EventsCountdown;
 			sourceTree = "<group>";
@@ -182,10 +198,10 @@
 				1F7031BE261B51790011C0EF /* AppCoordinator.swift in Sources */,
 				1F7031C4261B565C0011C0EF /* EventListViewController.swift in Sources */,
 				1F7031CF261B5D940011C0EF /* EventsCountdown.xcdatamodeld in Sources */,
-				1F7031AD261B50FF0011C0EF /* ViewController.swift in Sources */,
 				1F7031A9261B50FF0011C0EF /* AppDelegate.swift in Sources */,
 				1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */,
 				1F7031D3261B5F040011C0EF /* CoreDataManager.swift in Sources */,
+				1F348A15261B6C7700500DBB /* EventListViewModel.swift in Sources */,
 				1F7031AB261B50FF0011C0EF /* SceneDelegate.swift in Sources */,
 				1F7031C1261B558A0011C0EF /* EventListCoordinator.swift in Sources */,
 			);

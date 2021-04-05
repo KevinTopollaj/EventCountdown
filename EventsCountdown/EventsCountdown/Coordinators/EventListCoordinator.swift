@@ -17,6 +17,8 @@ final class EventListCoordinator: Coordinator {
   
   func start() {
     let eventListViewController = EventListViewController.instantiate()
+    let eventListViewModel = EventListViewModel()
+    eventListViewController.viewModel = eventListViewModel
     navigationController.setViewControllers([eventListViewController], animated: false)
   }
 }
