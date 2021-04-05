@@ -18,6 +18,7 @@
 		1F7031C4261B565C0011C0EF /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031C3261B565C0011C0EF /* EventListViewController.swift */; };
 		1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031C6261B5AA70011C0EF /* UIColor+Extensions.swift */; };
 		1F7031CF261B5D940011C0EF /* EventsCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */; };
+		1F7031D3261B5F040011C0EF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7031D2261B5F040011C0EF /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1F7031C3261B565C0011C0EF /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		1F7031C6261B5AA70011C0EF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1F7031CE261B5D940011C0EF /* EventsCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsCountdown.xcdatamodel; sourceTree = "<group>"; };
+		1F7031D2261B5F040011C0EF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */,
 				1F7031B6261B51000011C0EF /* Info.plist */,
 				1F7031CD261B5D940011C0EF /* EventsCountdown.xcdatamodeld */,
+				1F7031D2261B5F040011C0EF /* CoreDataManager.swift */,
 			);
 			path = EventsCountdown;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				1F7031AD261B50FF0011C0EF /* ViewController.swift in Sources */,
 				1F7031A9261B50FF0011C0EF /* AppDelegate.swift in Sources */,
 				1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */,
+				1F7031D3261B5F040011C0EF /* CoreDataManager.swift in Sources */,
 				1F7031AB261B50FF0011C0EF /* SceneDelegate.swift in Sources */,
 				1F7031C1261B558A0011C0EF /* EventListCoordinator.swift in Sources */,
 			);

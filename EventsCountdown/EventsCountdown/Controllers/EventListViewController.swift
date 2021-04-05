@@ -5,9 +5,12 @@
 //  Created by Kevin Topollaj on 5.4.21.
 //
 
+import CoreData
 import UIKit
 
 class EventListViewController: UIViewController {
+  
+  private let coreDataManager = CoreDataManager()
   
   static func instantiate() -> EventListViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: .main)
@@ -19,6 +22,9 @@ class EventListViewController: UIViewController {
     super.viewDidLoad()
     
     setupNavigationController()
+    
+    coreDataManager.saveEvent(name: "Bora bora", date: Date(), image: #imageLiteral(resourceName: "borabora"))
+    print(coreDataManager.fetchEvents())
   }
   
   private func setupNavigationController() {
