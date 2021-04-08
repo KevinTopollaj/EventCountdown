@@ -68,6 +68,35 @@
             </objects>
             <point key="canvasLocation" x="825" y="82"/>
         </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="DjU-TN-p2B">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailViewController" id="AZG-6y-Jve" customClass="EventDetailViewController" customModule="EventsCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LpU-Ax-9M9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-du-JpZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6wN-jJ-F4B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FIO-du-JpZ" secondAttribute="bottom" id="9zB-41-g3w"/>
+                            <constraint firstItem="FIO-du-JpZ" firstAttribute="top" secondItem="LpU-Ax-9M9" secondAttribute="top" id="LPo-fO-e68"/>
+                            <constraint firstItem="FIO-du-JpZ" firstAttribute="leading" secondItem="LpU-Ax-9M9" secondAttribute="leading" id="SsV-DO-nRL"/>
+                            <constraint firstAttribute="trailing" secondItem="FIO-du-JpZ" secondAttribute="trailing" id="rxf-Fd-dha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FIO-du-JpZ" id="LED-AO-0IS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5F-bH-MTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="82"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -51,4 +51,13 @@ final class CoreDataManager {
       return []
     }
   }
+  
+  func getEvent(_ eventID: NSManagedObjectID) -> Event? {
+    do {
+      return try moc.existingObject(with: eventID) as! Event
+    } catch {
+      print(error)
+    }
+    return nil
+  }
 }

@@ -36,7 +36,9 @@ final class EventListCoordinator: Coordinator {
   
   func onSelect(_ id: NSManagedObjectID) {
     // call event detail coordinator
-    print(id)
+    let eventDetailCoordinator = EventDetailCoordinator(eventID: id, navigationController: navigationController)
+    childCoordinators.append(eventDetailCoordinator)
+    eventDetailCoordinator.start()
   }
   
   func childDidFinish(_ childCoordinator: Coordinator) {
