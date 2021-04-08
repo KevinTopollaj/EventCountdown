@@ -10,6 +10,11 @@ import UIKit
 final class EventDetailViewController: UIViewController {
   
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var timeRemainingStackView: TimeRemainingStackView! {
+    didSet {
+      timeRemainingStackView.setup()
+    }
+  }
   
   var viewModel: EventDetailViewModel!
   
@@ -17,11 +22,17 @@ final class EventDetailViewController: UIViewController {
     super.viewDidLoad()
     
     viewModel.onUpdate = { [weak self] in
-      self?.imageView.image = self?.viewModel.image
+      guard let self = self,
+            let timeRemainingViewModel = self.viewModel.timeRemainingViewModel else { return }
+      self.imageView.image = self.viewModel.image
       // update the time remaining labels, event name and date label
-      
+      self.timeRemainingStackView.update(with: timeRemainingViewModel)
     }
     viewModel.viewDidLoad()
   }
   
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    viewModel.viewDidDisappear()
+  }
 }

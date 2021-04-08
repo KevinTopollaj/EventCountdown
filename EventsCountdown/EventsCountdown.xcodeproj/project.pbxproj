@@ -20,6 +20,8 @@
 		1F3913A4261EFC2900216A7F /* EventDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3913A3261EFC2900216A7F /* EventDetailCoordinator.swift */; };
 		1F3913A7261EFDCE00216A7F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3913A6261EFDCE00216A7F /* EventDetailViewController.swift */; };
 		1F3913AA261EFF6600216A7F /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3913A9261EFF6600216A7F /* EventDetailViewModel.swift */; };
+		1F3913AD261F52CE00216A7F /* TimeRemainingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3913AC261F52CE00216A7F /* TimeRemainingStackView.swift */; };
+		1F3913B0261F53D300216A7F /* TimeRemainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3913AF261F53D300216A7F /* TimeRemainingViewModel.swift */; };
 		1F521207261E4CEE00C620FC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F521206261E4CEE00C620FC /* Date+Extensions.swift */; };
 		1F55C2CF261DF879008199AB /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55C2CE261DF879008199AB /* EventCellViewModel.swift */; };
 		1F55C2D2261DFA10008199AB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55C2D1261DFA10008199AB /* EventCell.swift */; };
@@ -51,6 +53,8 @@
 		1F3913A3261EFC2900216A7F /* EventDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCoordinator.swift; sourceTree = "<group>"; };
 		1F3913A6261EFDCE00216A7F /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		1F3913A9261EFF6600216A7F /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
+		1F3913AC261F52CE00216A7F /* TimeRemainingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingStackView.swift; sourceTree = "<group>"; };
+		1F3913AF261F53D300216A7F /* TimeRemainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingViewModel.swift; sourceTree = "<group>"; };
 		1F521206261E4CEE00C620FC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1F55C2CE261DF879008199AB /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 		1F55C2D1261DFA10008199AB /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				1F348A30261B8A8B00500DBB /* TitleSubtitleCellViewModel.swift */,
 				1F55C2CE261DF879008199AB /* EventCellViewModel.swift */,
 				1F3913A9261EFF6600216A7F /* EventDetailViewModel.swift */,
+				1F3913AF261F53D300216A7F /* TimeRemainingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				1F348A34261B8B0F00500DBB /* TitleSubtitleCell.swift */,
 				1F55C2D1261DFA10008199AB /* EventCell.swift */,
+				1F3913AC261F52CE00216A7F /* TimeRemainingStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,12 +270,14 @@
 				1F348A21261B73E000500DBB /* UIViewController+Extensions.swift in Sources */,
 				1F7031C7261B5AA70011C0EF /* UIColor+Extensions.swift in Sources */,
 				1F55C2D2261DFA10008199AB /* EventCell.swift in Sources */,
+				1F3913AD261F52CE00216A7F /* TimeRemainingStackView.swift in Sources */,
 				1F348A1B261B6E7700500DBB /* AddEventCoordinator.swift in Sources */,
 				1F7031D3261B5F040011C0EF /* CoreDataManager.swift in Sources */,
 				1F348A1E261B728C00500DBB /* AddEventViewController.swift in Sources */,
 				1F348A15261B6C7700500DBB /* EventListViewModel.swift in Sources */,
 				1F3913A1261EF4F600216A7F /* UIImage+Extensions.swift in Sources */,
 				1F348A38261BAFF600500DBB /* ImagePickerCoordinator.swift in Sources */,
+				1F3913B0261F53D300216A7F /* TimeRemainingViewModel.swift in Sources */,
 				1F3913AA261EFF6600216A7F /* EventDetailViewModel.swift in Sources */,
 				1F55C2CF261DF879008199AB /* EventCellViewModel.swift in Sources */,
 				1F348A3B261BB96B00500DBB /* EventCellBuilder.swift in Sources */,
