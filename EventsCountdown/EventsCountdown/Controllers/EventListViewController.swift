@@ -16,6 +16,7 @@ class EventListViewController: UIViewController {
     super.viewDidLoad()
     
     tableView.dataSource = self
+    tableView.delegate = self
     tableView.register(EventCell.self, forCellReuseIdentifier: "EventCell")
     
     setupNavigationController()
@@ -54,5 +55,11 @@ extension EventListViewController: UITableViewDataSource {
       cell.update(with: eventCellViewModel)
       return cell
     }
+  }
+}
+
+extension EventListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    viewModel.didSelectRow(at: indexPath)
   }
 }
