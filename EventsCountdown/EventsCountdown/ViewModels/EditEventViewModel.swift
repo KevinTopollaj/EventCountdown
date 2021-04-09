@@ -67,10 +67,11 @@ final class EditEventViewModel {
           let image = backgroundImageCellViewModel?.image,
           let date = dateFormatter.date(from: dateString) else { return }
     
-    coreDataManager.saveEvent(name: name, date: date, image: image)
+    // update the existing event
+    coreDataManager.updateEvent(event: event, name: name, date: date, image: image)
     
     // tell the coordinator to dismiss
-    coordinator?.didFinishSaveEvent()
+    coordinator?.didFinishUpdateEvent()
   }
   
   func updateCell(indexPath: IndexPath, subtitle: String) {

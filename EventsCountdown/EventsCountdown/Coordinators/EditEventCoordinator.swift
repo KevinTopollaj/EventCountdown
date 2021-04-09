@@ -13,7 +13,7 @@ final class EditEventCoordinator: Coordinator {
   private var completion: (UIImage) -> Void = { _ in }
   private let event: Event
   
-  var parentCoordinator: EventListCoordinator?
+  var parentCoordinator: EventDetailCoordinator?
   
   init(event: Event, navigationController: UINavigationController) {
     self.event = event
@@ -28,17 +28,19 @@ final class EditEventCoordinator: Coordinator {
     navigationController.pushViewController(editEventViewController, animated: true)
   }
   
-  func didFinishSaveEvent() {
-    parentCoordinator?.onSaveEvent()
-    navigationController.dismiss(animated: true, completion: nil)
+  func didFinishUpdateEvent() {
+    parentCoordinator?.onUpdateEvent()
+    navigationController.popViewController(animated: true)
   }
   
   func showImagePicker(completion: @escaping (UIImage) -> Void) {
     self.completion = completion
     let imagePickerCoordinator = ImagePickerCoordinator(navigationController: navigationController)
     imagePickerCoordinator.parentCoordinator = self
-    imagePickerCoordinator.onFinishPicking = { image in
-      completion(image)
+    imagePickerCoordinator.onFinishPicking = { [weak self] image in
+      guard let self = self else { return }
+      self.completion(image)
+      self.navigationController.dismiss(animated: true, completion: nil)
     }
     childCoordinators.append(imagePickerCoordinator)
     imagePickerCoordinator.start()

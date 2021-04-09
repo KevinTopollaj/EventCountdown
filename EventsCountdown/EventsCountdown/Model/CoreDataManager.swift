@@ -24,6 +24,22 @@ final class CoreDataManager {
     persistentContainer.viewContext
   }
   
+  func updateEvent(event: Event, name: String, date: Date, image: UIImage) {
+    event.setValue(name, forKey: "name")
+    event.setValue(date, forKey: "date")
+    
+    let resizedImage = image.sameAspectRatio(newHeight: 250)
+    
+    let imageData = resizedImage.jpegData(compressionQuality: 0.5)
+    event.setValue(imageData, forKey: "image")
+    
+    do {
+      try moc.save()
+    } catch {
+      print(error.localizedDescription)
+    }
+  }
+  
   func saveEvent(name: String, date: Date, image: UIImage) {
     let event = Event(context: moc)
     event.setValue(name, forKey: "name")

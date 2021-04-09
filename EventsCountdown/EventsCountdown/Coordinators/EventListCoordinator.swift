@@ -12,7 +12,7 @@ final class EventListCoordinator: Coordinator {
   private(set) var childCoordinators: [Coordinator] = []
   private let navigationController: UINavigationController
   
-  var onSaveEvent: () -> Void = {}
+  var onUpdateEvent: () -> Void = {}
   
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
@@ -22,7 +22,7 @@ final class EventListCoordinator: Coordinator {
     let eventListViewController: EventListViewController = .instantiate()
     let eventListViewModel = EventListViewModel()
     eventListViewModel.coordinator = self
-    onSaveEvent = eventListViewModel.reload
+    onUpdateEvent = eventListViewModel.reload
     eventListViewController.viewModel = eventListViewModel
     navigationController.setViewControllers([eventListViewController], animated: false)
   }
