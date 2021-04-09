@@ -8,7 +8,7 @@
 import CoreData
 import UIKit
 
-final class EventDetailCoordinator: Coordinator {
+final class EventDetailCoordinator: Coordinator, EventUpdatingCoordinator {
   private(set) var childCoordinators: [Coordinator] = []
   private let navigationController: UINavigationController
   private let eventID: NSManagedObjectID

@@ -153,7 +153,6 @@
 		1F7031A7261B50FF0011C0EF /* EventsCountdown */ = {
 			isa = PBXGroup;
 			children = (
-				1F568D4826211315008F6FEC /* Services */,
 				1F7031A8261B50FF0011C0EF /* AppDelegate.swift */,
 				1F7031AA261B50FF0011C0EF /* SceneDelegate.swift */,
 				1F7031AE261B50FF0011C0EF /* Main.storyboard */,
@@ -161,6 +160,7 @@
 				1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */,
 				1F7031B6261B51000011C0EF /* Info.plist */,
 				1F7031CB261B5C330011C0EF /* Coordinators */,
+				1F568D4826211315008F6FEC /* Services */,
 				1F348A17261B6D8F00500DBB /* Model */,
 				1F348A18261B6DAB00500DBB /* ViewModels */,
 				1F348A33261B8ACD00500DBB /* Views */,
