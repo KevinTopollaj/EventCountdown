@@ -26,6 +26,7 @@
 		1F55C2CF261DF879008199AB /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55C2CE261DF879008199AB /* EventCellViewModel.swift */; };
 		1F55C2D2261DFA10008199AB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55C2D1261DFA10008199AB /* EventCell.swift */; };
 		1F55C2D5261DFD5E008199AB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55C2D4261DFD5E008199AB /* UIView+Extensions.swift */; };
+		1F568D4A26211334008F6FEC /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F568D4926211334008F6FEC /* EventService.swift */; };
 		1F58F8E3262083BA00B494B4 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F58F8E2262083BA00B494B4 /* EditEventCoordinator.swift */; };
 		1F58F8E62620879200B494B4 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F58F8E52620879200B494B4 /* EditEventViewController.swift */; };
 		1F58F8E9262088B700B494B4 /* EditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F58F8E8262088B700B494B4 /* EditEventViewModel.swift */; };
@@ -62,6 +63,7 @@
 		1F55C2CE261DF879008199AB /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 		1F55C2D1261DFA10008199AB /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		1F55C2D4261DFD5E008199AB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1F568D4926211334008F6FEC /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		1F58F8E2262083BA00B494B4 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
 		1F58F8E52620879200B494B4 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		1F58F8E8262088B700B494B4 /* EditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1F568D4826211315008F6FEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F568D4926211334008F6FEC /* EventService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1F70319C261B50FF0011C0EF = {
 			isa = PBXGroup;
 			children = (
@@ -143,18 +153,19 @@
 		1F7031A7261B50FF0011C0EF /* EventsCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				1F568D4826211315008F6FEC /* Services */,
 				1F7031A8261B50FF0011C0EF /* AppDelegate.swift */,
 				1F7031AA261B50FF0011C0EF /* SceneDelegate.swift */,
 				1F7031AE261B50FF0011C0EF /* Main.storyboard */,
 				1F7031B1261B51000011C0EF /* Assets.xcassets */,
 				1F7031B3261B51000011C0EF /* LaunchScreen.storyboard */,
 				1F7031B6261B51000011C0EF /* Info.plist */,
-				1F7031C9261B5BFD0011C0EF /* Extensions */,
-				1F7031CA261B5C160011C0EF /* Controllers */,
 				1F7031CB261B5C330011C0EF /* Coordinators */,
 				1F348A17261B6D8F00500DBB /* Model */,
 				1F348A18261B6DAB00500DBB /* ViewModels */,
 				1F348A33261B8ACD00500DBB /* Views */,
+				1F7031CA261B5C160011C0EF /* Controllers */,
+				1F7031C9261B5BFD0011C0EF /* Extensions */,
 				1F348A3A261BB96B00500DBB /* EventCellBuilder.swift */,
 			);
 			path = EventsCountdown;
@@ -291,6 +302,7 @@
 				1F3913B0261F53D300216A7F /* TimeRemainingViewModel.swift in Sources */,
 				1F58F8E9262088B700B494B4 /* EditEventViewModel.swift in Sources */,
 				1F3913AA261EFF6600216A7F /* EventDetailViewModel.swift in Sources */,
+				1F568D4A26211334008F6FEC /* EventService.swift in Sources */,
 				1F55C2CF261DF879008199AB /* EventCellViewModel.swift in Sources */,
 				1F348A3B261BB96B00500DBB /* EventCellBuilder.swift in Sources */,
 				1F348A35261B8B0F00500DBB /* TitleSubtitleCell.swift in Sources */,
