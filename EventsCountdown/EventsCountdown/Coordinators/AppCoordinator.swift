@@ -12,6 +12,12 @@ protocol Coordinator: class {
   var childCoordinators: [Coordinator] { get }
   // entry point for each coordinator
   func start()
+  
+  func childDidFinish(_ childCoordinator: Coordinator)
+}
+
+extension Coordinator {
+  func childDidFinish(_ childCoordinator: Coordinator) { }
 }
 
 final class AppCoordinator: Coordinator {

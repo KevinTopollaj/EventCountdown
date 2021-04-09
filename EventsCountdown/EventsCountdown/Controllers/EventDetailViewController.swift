@@ -28,6 +28,9 @@ final class EventDetailViewController: UIViewController {
       // update the time remaining labels, event name and date label
       self.timeRemainingStackView.update(with: timeRemainingViewModel)
     }
+    
+    navigationItem.rightBarButtonItem = .init(image: UIImage(systemName: "pencil"), style: .plain, target: viewModel, action: #selector(viewModel.editButtonTapped))
+    
     viewModel.viewDidLoad()
   }
   
