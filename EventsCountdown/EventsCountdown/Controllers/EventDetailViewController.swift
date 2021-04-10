@@ -34,8 +34,17 @@ final class EventDetailViewController: UIViewController {
     viewModel.viewDidLoad()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.navigationBar.tintColor = .white
+  }
+  
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
     viewModel.viewDidDisappear()
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    .lightContent
   }
 }

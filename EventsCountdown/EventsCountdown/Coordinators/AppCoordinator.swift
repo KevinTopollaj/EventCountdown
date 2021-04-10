@@ -29,7 +29,7 @@ final class AppCoordinator: Coordinator {
   }
   
   func start() {
-    let navigationController = UINavigationController()
+    let navigationController = EventNavigationController()
     
     let eventListCoordinator = EventListCoordinator(navigationController: navigationController)
 
