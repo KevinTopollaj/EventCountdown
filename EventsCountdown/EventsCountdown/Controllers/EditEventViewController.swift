@@ -44,7 +44,7 @@ final class EditEventViewController: UIViewController {
     navigationItem.title = viewModel.title
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tappedDone))
-    navigationController?.navigationBar.tintColor = .black
+    navigationController?.navigationBar.tintColor = .systemBlue
     
     // to force large titles
     tableView.contentInsetAdjustmentBehavior = .never
