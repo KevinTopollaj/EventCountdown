@@ -30,7 +30,10 @@ Event List            |  Add Event
 :-------------------------:|:-------------------------:
 ![](./img/S1.png)  |  ![](./img/S2.png)
 
-![Example screenshot](./img/screenshot.png)
+Event Detail           |  Edit Event
+:-------------------------:|:-------------------------:
+![](./img/S3.png)  |  ![](./img/S4.png)
+
 
 ## Technologies
 * Swift
